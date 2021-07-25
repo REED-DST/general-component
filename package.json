@@ -1,6 +1,6 @@
 {
-  "name": "babel-typescript-sample",
-  "version": "0.7.2",
+  "name": "general-component",
+  "version": "1.0.0",
   "license": "MIT",
   "main": "lib/main.js",
   "typescript": {

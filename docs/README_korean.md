@@ -1,10 +1,10 @@
 # General Component
 
-Do you use English? [Here is original English copy.](/README.md)
-
 General Component(이하 GC)는 React를 위한 컴포넌트 자동생성을 통해 앱의 프로토타입을 빠르게 작성할 수 있도록 돕는 라이브러리입니다.
 
 GC를 사용하면 여러분의 프로토타입을 위해서 컴포넌트를 작성할 필요가 없습니다. 컴포넌트를 만들기 전에 컴포넌트를 사용할 수 있어요! 아래의 예제를 확인하세요. 우리가 아직까지 `CP.Greeting`이라는 컴포넌트를 만든 적이 없다는 점을 유의하세요.
+
+Do you use English? [Here is the original English copy.](/README.md)
 
 ```typescript jsx
 import CP from "general-component";

@@ -1,10 +1,10 @@
 # General Component
 
-한국어를 사용하시나요? [여기 한국어 번역본이 있습니다.](/docs/README_korean.md)
-
 General Component(GC, from now) is a React component generation library which helps you prototype your service quickly.
 
 With using this library, you don't need to write your components to build prototype. You can just use components before you write them! See below. Pay attention that there's no declaration of `CP.Greeting` component.
+
+한국어를 사용하시나요? [여기 한국어 번역본이 있습니다.](/docs/README_korean.md)
 
 ```typescript jsx
 import CP from "general-component";
