@@ -1,10 +1,14 @@
 {
   "name": "general-component",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "main": "lib/main.js",
   "typescript": {
     "definition": "lib/main.d.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/REED-DST/general-component"
   },
   "scripts": {
     "prepare": "install-peers",

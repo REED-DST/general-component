@@ -4,7 +4,7 @@ General Component(GC, from now) is a React component generation library which he
 
 With using this library, you don't need to write your components to build prototype. You can just use components before you write them! See below. Pay attention that there's no declaration of `CP.Greeting` component.
 
-한국어를 사용하시나요? [여기 한국어 번역본이 있습니다.](/docs/README_korean.md)
+한국어를 사용하시나요? [여기 한국어 번역본이 있습니다.](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/README_korean.md)
 
 ```typescript jsx
 import CP from "general-component";
@@ -33,7 +33,7 @@ function App() {
 }
 ```
 
-![Example code result 1](/docs/images/example-code-result-1.png)
+![Example code result 1](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-1.png)
 
 ## Getting started
 
@@ -61,7 +61,7 @@ import CP from "general-component";
 />
 ```
 
-![Example code result 2](/docs/images/example-code-result-2.png)
+![Example code result 2](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-2.png)
 
 ### Creating button
 
@@ -74,7 +74,7 @@ You can create a button with passing a parameterless function.
 />
 ```
 
-![Example code result 3](/docs/images/example-code-result-3.png)
+![Example code result 3](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-3.png)
 
 ### Creating string and integer inputs
 
@@ -92,7 +92,7 @@ At this moment this behavior only works with string and integer types(not includ
 />
 ```
 
-![Example code result 4](/docs/images/example-code-result-4.png)
+![Example code result 4](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-4.png)
 
 ### Handling array of data
 
@@ -112,7 +112,7 @@ Remember, you are asked to pass `key` or `id` field. If you don't, React may com
 />
 ```
 
-![Example code result 5](/docs/images/example-code-result-5.png)
+![Example code result 5](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-5.png)
 
 ### Embedding custom children
 
@@ -126,7 +126,7 @@ When you pass children, they will be displayed right after auto-generated proper
 </CP.SocialMediaFeed>
 ```
 
-![Example code result 6](/docs/images/example-code-result-6.png)
+![Example code result 6](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-6.png)
 
 ### How unhandled properties are shown
 
@@ -143,7 +143,7 @@ When GC encounters with unexpected properties, it gives up to render it and rend
 />
 ```
 
-![Example code result 7](/docs/images/example-code-result-7.png)
+![Example code result 7](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-7.png)
 
 ### Replacing with custom component
 
@@ -174,7 +174,7 @@ function App() {
 };
 ```
 
-![Example code result 8](/docs/images/example-code-result-8.png)
+![Example code result 8](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-8.png)
 
 ### Adding custom middleware
 
@@ -211,7 +211,7 @@ function App() {
 }
 ```
 
-![Example code result 9](/docs/images/example-code-result-9.png)
+![Example code result 9](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-9.png)
 
 ## Documents
 

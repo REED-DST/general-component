@@ -33,7 +33,7 @@ function App() {
 }
 ```
 
-![Example code result 1](/docs/images/example-code-result-1.png)
+![Example code result 1](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-1.png)
 
 ## 시작하기
 
@@ -61,7 +61,7 @@ import CP from "general-component";
 />
 ```
 
-![Example code result 2](/docs/images/example-code-result-2.png)
+![Example code result 2](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-2.png)
 
 ### 버튼 만들기
 
@@ -74,7 +74,7 @@ import CP from "general-component";
 />
 ```
 
-![Example code result 3](/docs/images/example-code-result-3.png)
+![Example code result 3](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-3.png)
 
 ### 문자열과 정수 입력받기
 
@@ -92,7 +92,7 @@ import CP from "general-component";
 />
 ```
 
-![Example code result 4](/docs/images/example-code-result-4.png)
+![Example code result 4](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-4.png)
 
 ### 배열 다루기
 
@@ -112,7 +112,7 @@ import CP from "general-component";
 />
 ```
 
-![Example code result 5](/docs/images/example-code-result-5.png)
+![Example code result 5](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-5.png)
 
 ### 커스텀 자식 컴포넌트 삽입하기
 
@@ -126,7 +126,7 @@ children 프로퍼티가 전달되면, 이는 자동생성된 프로퍼티 바�
 </CP.SocialMediaFeed>
 ```
 
-![Example code result 6](/docs/images/example-code-result-6.png)
+![Example code result 6](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-6.png)
 
 ### 지원되지 않는 프로퍼티의 표시
 
@@ -143,7 +143,7 @@ GC가 지원하지 않는 프로퍼티를 맞닥뜨리게되면, 렌더링을 �
 />
 ```
 
-![Example code result 7](/docs/images/example-code-result-7.png)
+![Example code result 7](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-7.png)
 
 ### 커스텀 컴포넌트로 교체하기
 
@@ -174,7 +174,7 @@ function App() {
 };
 ```
 
-![Example code result 8](/docs/images/example-code-result-8.png)
+![Example code result 8](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-8.png)
 
 ### 커스텀 미들웨어 삽입하기
 
@@ -213,7 +213,7 @@ function App() {
 }
 ```
 
-![Example code result 9](/docs/images/example-code-result-9.png)
+![Example code result 9](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-9.png)
 
 ## 문서
 
