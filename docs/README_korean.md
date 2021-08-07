@@ -180,9 +180,29 @@ function App() {
 
 여러분이 GC를 커스터마이즈 할 수도 있습니다! 여러분의 특별한 데이터타입이 GC에 의해 번역되게 할 수 있어요.
 
-아직까지는, 이를 하기 위해서는 라이브러리를 포크하고 커스텀 미들웨어를 삽입해야 합니다. 라이브러리 수정 없이 커스텀 미들웨어를 삽입하거나 교체할 수 있는 기능을 2021-08까지 추가할 예정입니다.
+미들웨어에는 세 가지가 있습니다.
 
-라이브러리를 수정하기 위해서는 하단의 문서를 참고해주세요.
+* Entry transformation middleware
+* Field generation middleware
+* Component generation middleware
+
+이 미들웨어들은 아래의 코드와 같은 방법으로 수정할 수 있습니다.
+
+의도된 것이 아니라면, 이미 정의된 미들웨어를 삽입하는 것을 빠뜨리지 마세요. 
+
+```typescript jsx
+import {
+    entryTransMiddlewares,
+    fieldGenMiddlewares,
+    componentGenMiddlewares,
+    
+    setEntryTransMiddlewares,
+    setFieldGenMiddlewares,
+    setComponentGenMiddlewares,
+} from "general-component";
+
+setEntryTransMiddlewares([...entryTransMiddlewares, yourCustomMiddleware]);
+```
 
 ### 주의사항
 
@@ -214,10 +234,6 @@ function App() {
 ```
 
 ![Example code result 9](https://raw.githubusercontent.com/REED-DST/general-component/master/docs/images/example-code-result-9.png)
-
-## 문서
-
-아직 작성중이예요!(2021-08까지 완료 예정)
 
 ## 기여하기
 

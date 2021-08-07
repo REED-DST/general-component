@@ -10,6 +10,6 @@ type Field = (
   FieldList |
   FieldButton |
   FieldRenderString
-);
+) | any;
 
 export default Field;

@@ -1,14 +1,15 @@
-import {Map} from "immutable";
-import {createGeneralComponentFactory} from "./core";
-import entryTransMiddlewares from "./entry-trans-middlewares";
-import fieldGenMiddlewares from "./field-gen-middlewares";
-import componentGenMiddlewares from "./component-gen-middlewares";
+import {ComponentGenMiddleware, createGeneralComponentFactory, EntryTransMiddleware, FieldGenMiddleware} from "./core";
+import defaultEntryTransMiddlewares from "./entry-trans-middlewares";
+import defaultFieldGenMiddlewares from "./field-gen-middlewares";
+import defaultComponentGenMiddlewares from "./component-gen-middlewares";
 
-const createGeneralComponent = createGeneralComponentFactory({
-  entryTransMiddlewares,
-  fieldGenMiddlewares,
-  componentGenMiddlewares,
-});
+let entryTransMiddlewares: EntryTransMiddleware[] = defaultEntryTransMiddlewares;
+let fieldGenMiddlewares: FieldGenMiddleware[] = defaultFieldGenMiddlewares;
+let componentGenMiddlewares: ComponentGenMiddleware[] = defaultComponentGenMiddlewares;
+
+const setEntryTransMiddlewares = (value: EntryTransMiddleware[]) => entryTransMiddlewares = value;
+const setFieldGenMiddlewares = (value: FieldGenMiddleware[]) => fieldGenMiddlewares = value;
+const setComponentGenMiddlewares = (value: ComponentGenMiddleware[]) => componentGenMiddlewares = value;
 
 const componentDict: Record<string, React.FC> = {};
 
@@ -16,19 +17,15 @@ const handler = {
   get: (obj: any, componentName: string) => {
     if (componentName in componentDict)
     {
-      console.log("Found: ", componentName);
-    }
-    else
-    {
-      console.log("Not found: ", componentName);
-    }
-
-    if (componentName in componentDict)
-    {
       return componentDict[componentName];
     }
 
     // Create component.
+    const createGeneralComponent = createGeneralComponentFactory({
+      entryTransMiddlewares,
+      fieldGenMiddlewares,
+      componentGenMiddlewares,
+    });
     const newComponent = createGeneralComponent();
 
     // Store to obj.
@@ -50,5 +47,17 @@ type ComponentPool = any;
 type CP = ComponentPool;
 
 export default CP;
-export {componentPool, CP, ComponentPool};
+export {
+  componentPool,
+  CP,
+  ComponentPool,
+
+  entryTransMiddlewares,
+  fieldGenMiddlewares,
+  componentGenMiddlewares,
+
+  setEntryTransMiddlewares,
+  setFieldGenMiddlewares,
+  setComponentGenMiddlewares,
+};
 

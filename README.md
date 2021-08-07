@@ -96,7 +96,7 @@ At this moment this behavior only works with string and integer types(not includ
 
 ### Handling array of data
 
-You can insert sub objets with the following code.
+You can insert sub-objects with the following code.
 
 Remember, you are asked to pass `key` or `id` field. If you don't, React may complain about this.(Though it works)
 
@@ -180,9 +180,29 @@ function App() {
 
 You can customize the library! You can let your special data types can be read by General Component.
 
-At time moment, to do this. you need to fork the library and add custom middleware. We are planning to adopt adding or replacing custom middleware without modifying the original library in a month(by 2021-08)!
+There are three kinds of middlewares.
 
-To customize the library, please read the documents below.
+* Entry transformation middleware
+* Field generation middleware
+* Component generation middleware
+
+They can be customized with the following code.
+
+Do not forget to prepend the existing middleware, unless you intended it.
+
+```typescript jsx
+import {
+    entryTransMiddlewares,
+    fieldGenMiddlewares,
+    componentGenMiddlewares,
+    
+    setEntryTransMiddlewares,
+    setFieldGenMiddlewares,
+    setComponentGenMiddlewares,
+} from "general-component";
+
+setEntryTransMiddlewares([...entryTransMiddlewares, yourCustomMiddleware]);
+```
 
 ### Caveats
 
